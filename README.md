@@ -1,1 +1,2 @@
-багато було нового,все здивувало,планую все використовувати!
+Hello, my name is Daria 
+this course is informative and instructive
