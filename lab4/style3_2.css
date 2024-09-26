@@ -1,0 +1,63 @@
+/* Задаємо основний стиль для всього тіла сторінки */
+body {
+    margin: 0;
+    padding: 0;
+    color: black; /* Колір тексту за замовчуванням - чорний */
+    font-family: Arial, sans-serif; /* Базовий шрифт для всіх елементів */
+}
+
+/* Селектори тегів */
+h1 {
+    text-align: center;
+    color: red; /* Червоний колір для заголовка */
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+    color: black; /* Явно чорний колір для підзаголовка */
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    color: black; /* Чітко вказуємо чорний колір для абзаців */
+}
+
+/* Стилі для тегу <del> */
+del {
+    color: black; /* Перекреслений текст - чорний */
+}
+
+/* Стилі для тегу <u> */
+u {
+    color: black; /* Підкреслений текст також чорний */
+}
+
+/* Селектори класів */
+.highlight {
+    color: red; /* Яскравий червоний для спеціального виділення */
+}
+
+/* Стилізація для тегу <mark> */
+mark {
+    background-color: yellow;
+    font-weight: bold;
+    color: black; /* Жовтий фон, але чорний текст */
+}
+
+/* Стилізація для тегу <samp> */
+samp {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: darkgreen; /* Темно-зелений текст для samp */
+}
+
+/* Стиль для горизонтальної лінії */
+hr {
+    width: 65%;
+    border: none; /* Відміняємо всі стандартні межі */
+    border-top: 4px solid green; /* Тільки зелена верхня межа */
+}
