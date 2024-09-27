@@ -1,36 +1,23 @@
-/* Загальні стилі для всіх посилань (фіолетовий колір тексту) */
 a {
     color: purple;
-    text-decoration: underline;
 }
 
-/* Зелені посилання для головного меню */
-.main-link {
+.list_header {
     color: green;
 }
 
-/* Прибрати підкреслення для посилань в останньому списку */
-.berries a {
-    text-decoration: none;
+.list_square {
+    list-style: square;
 }
 
-/* Встановлюємо тип маркера квадрат для ягід */
-.square {
-    list-style-type: square;
+.list_icon {
+    list-style-image: url("/li.svg");
 }
 
-/* Встановлюємо тип маркера піктограма для овочів */
-.icon {
-    list-style-type: disc;
-}
-
-/* Прибираємо маркери для вкладених списків */
-.submenu {
+.list_none {
     list-style: none;
-    padding-left: 20px; /* Відступ для чіткого відображення */
 }
 
-/* Внутрішнє розташування маркерів для блоку "Різне" */
-li {
-    list-style-position: inside;
+.list_href {
+    text-decoration: none;
 }
