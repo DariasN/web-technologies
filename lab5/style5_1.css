@@ -1,0 +1,131 @@
+/* Стилі для контейнера */
+.container {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+.first-level {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.first-level > li {
+    background-color: rgb(103, 158, 128);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.first-level > li > span {
+    background-color: rgb(199, 124, 106);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.with-icon {
+    padding-left: 40px;
+}
+
+.with-icon::before {
+    content: '';
+    background-image: url('img/rule.png');
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+}
+
+.first-level > li:nth-child(2) > .with-icon::before {
+    background-image: url('img/rule.png');
+}
+
+.second-level {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.second-level > li {
+    background-color: rgb(153, 180, 102);
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.second-level > li > span {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(218, 106, 32);
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+li {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px 24px;
+    padding-left: 40px;
+}
+
+
+.first-level li:nth-child(1) .second-level li:nth-child(1) {
+    background-image: url('img/ad_units.png');
+}
+
+.first-level li:nth-child(1) .second-level li:nth-child(2) {
+    background-image: url('img/airplane_ticket.png');
+}
+
+.first-level li:nth-child(1) .second-level li:nth-child(3) {
+    background-image: url('img/hotel.png');
+}
+
+.first-level li:nth-child(1) .second-level li:nth-child(4) {
+    background-image: url('img/car_rental.png');
+}
+
+/* Іконки для відпочинку */
+.first-level li:nth-child(2) .second-level li:nth-child(1) {
+    background-image: url('img/local_bar.png');
+}
+
+.first-level li:nth-child(2) .second-level li:nth-child(2) {
+    background-image: url('img/casino.png');
+}
+
+.first-level li:nth-child(2) .second-level li:nth-child(3) {
+    background-image: url('img/museum.png');
+}
+
+.first-level li:nth-child(2) .second-level li:nth-child(4) {
+    background-image: url('img/festival.png');
+}
