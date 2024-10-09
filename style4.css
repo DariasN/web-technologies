@@ -1,0 +1,47 @@
+.block-list{
+    display: flex;
+    padding: 50px 0 0 50px;
+    flex-wrap: wrap;
+}
+.block-list div{
+    margin-bottom: 50px;
+    margin-right: auto;
+    width: 300px;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+p{
+    padding-left: 10px;
+}
+img{
+    width: 100%;
+}
+
+.first-block{
+    box-shadow: -10px -10px 7px 5px deeppink;
+}
+.second-block{
+
+    box-shadow:  0 0 15px 7px deeppink;
+}
+.third-block{
+    box-shadow: 5px 5px 10px deeppink;
+    margin-right: 0;
+}
+.fourth-block{
+    box-shadow:  0 0 30px deeppink;
+}
+.fifth-block{
+    box-shadow: inset 0 10px deeppink, inset 0 -10px pink, inset 10px 0 hotpink, inset -10px 0 lightpink;
+    padding: 10px;
+}
+.sixth-block{
+    border: 1px solid deeppink;
+    padding: 10px;
+    box-shadow: deeppink 0 15px 0 -5px, pink 0 -15px 0 -5px;
+}
+.block-title{
+     margin-left: 10px;
+     font-weight: bold;
+ }
