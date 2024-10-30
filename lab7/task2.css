@@ -1,0 +1,44 @@
+/* Загальний стиль для контейнера */
+.container {
+    display: flex;
+}
+
+/* Ліва частина */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Блоки 1.1 та 1.2 */
+.block1 {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Сині блоки (Блоки 2.1 і 2.2), приховані за замовчуванням */
+.block2 {
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 110px; /* Відступ праворуч від зеленого блоку */
+    visibility: hidden;
+}
+
+/* Відображення синіх блоків при наведенні на зелені блоки */
+.block1:hover .block2 {
+    visibility: visible;
+}

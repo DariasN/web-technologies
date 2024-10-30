@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Горизонтальна панель */
+.horizontal-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 200px); /* Зменшуємо ширину на ширину вертикальної панелі */
+    z-index: 1000;
+    left: 200px; /* Зміщуємо праворуч на ширину вертикальної панелі */
+}
+
+.horizontal-nav > li {
+    position: relative;
+}
+
+.horizontal-nav > li img {
+    height: 50px;
+    width: 50px;
+}
+
+.horizontal-nav > li > a {
+    padding: 10px 30px;
+}
+
+.horizontal-nav > li.mail {
+    margin-left: auto;
+}
+
+.horizontal-nav > li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    z-index: 10;
+}
+
+.horizontal-nav > li:hover ul {
+    display: block;
+}
+
+.horizontal-nav li a:hover {
+    background-color: #4cbf25;
+}
+
+/* Липка навігаційна панель */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+/* Контент */
+.content {
+    padding-top: 100px;
+    margin-left: 200px; /* Зміщуємо контент праворуч на ширину вертикальної панелі */
+}
+
+.content p {
+    padding: 20px;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Вертикальна панель */
+.vertical-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.vertical-nav > li {
+    position: relative;
+}
+
+/* Виправлення для вкладених пунктів меню у вертикальній панелі */
+.vertical-nav > li > ul {
+    display: none; /* Сховуємо підменю за замовчуванням */
+    position: relative; /* Позиціонування відносно батьківського елемента */
+    background-color: #444;
+    width: 200px;
+    z-index: 10;
+}
+
+.vertical-nav > li:hover > ul {
+    display: block; /* Показуємо підменю при наведенні */
+}
+
+/* Стилі для 1-го рівня меню */
+.vertical-nav .level-1 {
+    display: none; /* Сховуємо 1-й рівень меню за замовчуванням */
+}
+
+.vertical-nav > li:hover .level-1 {
+    display: block; /* Показуємо 1-й рівень при наведенні на батьківський пункт */
+}
+
+/* Стилі для 2-го рівня меню */
+.vertical-nav .level-2 {
+    display: none; /* Сховуємо 2-й рівень меню за замовчуванням */
+}
+
+.vertical-nav > li > ul > li:hover > .level-2 {
+    display: block;
+}
+
+
+.vertical-nav .level-3 {
+    display: none;
+}
+
+.vertical-nav > li > ul > li > .level-2 > li:hover .level-3 {
+    display: block;
+}
+
+
+.vertical-nav li a:hover {
+    background-color: #555;
+}
+
+
+.vertical-nav li.active a {
+    background-color: #666;
+}
